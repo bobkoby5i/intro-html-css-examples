@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
 
 .hidden {
     display: none !important;
@@ -12,13 +15,10 @@
     clear: both;
 }
 
-body {
-    font-family: "Nunito Sans", sans-serif;
-}
-
 .container {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
+
 }
 
 .page-header .container {
@@ -105,6 +105,7 @@ body {
     margin: 100px auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .page-footer {
