@@ -463,56 +463,43 @@ body {
     width: 444px;
 }
 
-.my_form input {
+.my_form input,
+.my_form textarea {
     width: 444px;
     border: 1px solid #D1D1D1;
     border-radius: 8px;
-    box-shadow: 0px 1px 6px #FF00004D;
     font-size: 16px;
     line-height: 20px;
     font-style: italic;
+    font-family: "Nunito Sans", sans-serif;
     padding: 8px 12px 8px 12px;
     margin-bottom: 20px;
     box-sizing: border-box;
 }
 
-.my_form input:focus {
+.my_form input:focus,
+.my_form textarea:focus {
     outline: none !important;
-    border-color: #FF0000;
+    border: 1px solid #FF0000;
     box-shadow: 0px 1px 6px #FF00004D;
 }
 
-.my_form input::placeholder {
-    color: #B2B2B2;
-    font-style: italic;
-}
-
+.my_form input::placeholder,
 .my_form textarea::placeholder {
     color: #B2B2B2;
     font-style: italic;
 }
 
 .my_form textarea{
-    width: 100%;
     resize: none;
     min-height: 140px;
-    border: 1px solid #D1D1D1;
-    border-radius: 8px;
-    box-shadow: 0px 1px 6px #FF00004D;
     font-size: 16px;
     font-style: italic;
     font-family: "Nunito Sans", sans-serif;
     line-height: 20px;
     color: #B2B2B2;
-    padding: 8px 12px;
-    margin-bottom: 20px;
 }
 
-.my_form textarea:focus {
-    outline: none !important;
-    border-color: #FF0000;
-    box-shadow: 0px 1px 6px #FF00004D;
-}
 
 
 
@@ -578,7 +565,7 @@ body {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     box-shadow:  0px 3px 6px #FF00004D;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .contact-btn-row{
