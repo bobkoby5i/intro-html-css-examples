@@ -101,9 +101,6 @@ body {
 
 }
 
-.page-logo--img {
-
-}
 .page-logo--text {
     color: var(--secondary-color);
     font-size: 35px;
@@ -173,6 +170,8 @@ body {
     padding-top: 10px;
     text-align: center;
     font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -428,7 +427,6 @@ body {
 
 .contact-section {
     display: flex;
-    background-color: #b3d4fc;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -437,6 +435,7 @@ body {
 
 .contact_image_and_form img{
     width: 444px;
+    height: 316px;
 }
 .contact-title{
     display: flex;
@@ -461,7 +460,6 @@ body {
 
 .my_form {
     display: flex;
-    background-color: #efeff8;
     width: 444px;
 }
 
@@ -507,6 +505,7 @@ body {
     line-height: 20px;
     color: #B2B2B2;
     padding: 8px 12px;
+    margin-bottom: 20px;
 }
 
 .my_form textarea:focus {
@@ -517,9 +516,55 @@ body {
 
 
 
-/* contact form end */
 
 
+/* check box */
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    color: #B2B2B2;
+    font-weight: 300;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.checkbox span {
+    height: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox input:checked + span {
+    /*background-color: #E91E63;*/
+    background-image: url('../images/Icon Check.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* contact button submit*/
+
+
+.contact-btn-submit:hover{
+    cursor: pointer
+}
 
 .contact-btn-submit {
     border: 1px solid;
@@ -543,14 +588,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
+/* contact form end */
 
 
 

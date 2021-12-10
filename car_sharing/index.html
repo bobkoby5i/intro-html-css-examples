@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
   <meta charset="utf-8">
-  <title>Zadania</title>
+  <title>Car sharing</title>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/reset.css">
@@ -43,11 +43,11 @@
       <p  class="banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <div class="banner-buttons">
         <button class="btn btn--primary">
-          share car
+          share&nbspcar
         </button>
 
         <button class="btn btn--secondary">
-          key features
+          key&nbspfeatures
         </button>
       </div>
     </div>
@@ -162,12 +162,17 @@ Pierwszy input jest zaznaczony na czerwono. Jest to reprezentacja stanu :focus. 
 <!--          <label for="box_name" class="my_label">Login</label><BR>-->
           <input id="box_name" type="text" class="contact_form_box" placeholder="Type your name"><BR>
 <!--          <label for="box_password" class="my_label">Password</label><BR>-->
-          <input id="box_password" type="password" class="contact_form_box" placeholder="Type your e-mail">
+          <input id="box_email"    type="text" class="contact_form_box" placeholder="Type your e-mail">
+          <input id="box_password" type="password" class="contact_form_box" placeholder="Type your password">
 <!--          <label for="box_message">Tell us your story:</label><BR>-->
           <textarea id="box_message" class="contact_form_box" name="message" >Type your message</textarea>
-<!--          <hr>-->
-<!--          <input id="accept_rules" type="checkbox" />-->
-<!--          <label for="accept_rules">Accept rules</label>-->
+
+          <label class="checkbox" for="accept_rules">
+            <input id="accept_rules" type="checkbox">
+            <span></span>
+            I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+          </label>
+
           <div class="contact-btn-row">
             <button class="contact-btn-submit" type="submit">Submit</button>
           </div>
