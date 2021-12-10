@@ -35,7 +35,7 @@ body {
     background-position: center;
     background-size: cover;
     /*height: 807px;*/
-    height: 100vh;
+    height: calc( 100vh - 56px /2  );
 }
 
 
@@ -424,22 +424,134 @@ body {
 
 
 
+/* contact form begin */
 
-
-
-
-
-
-
-
-
-
-
-
-
-.section-contact {
-    background-color: tomato;
+.contact-section {
+    display: flex;
+    background-color: #b3d4fc;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0;
 }
+
+.contact_image_and_form img{
+    width: 444px;
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+    color: black;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.contact_image_and_form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 35px;
+}
+
+
+.my_form {
+    display: flex;
+    background-color: #efeff8;
+    width: 444px;
+}
+
+.my_form input {
+    width: 444px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    box-shadow: 0px 1px 6px #FF00004D;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: italic;
+    padding: 8px 12px 8px 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.my_form input:focus {
+    outline: none !important;
+    border-color: #FF0000;
+    box-shadow: 0px 1px 6px #FF00004D;
+}
+
+.my_form input::placeholder {
+    color: #B2B2B2;
+    font-style: italic;
+}
+
+.my_form textarea::placeholder {
+    color: #B2B2B2;
+    font-style: italic;
+}
+
+.my_form textarea{
+    width: 100%;
+    resize: none;
+    min-height: 140px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    box-shadow: 0px 1px 6px #FF00004D;
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 20px;
+    color: #B2B2B2;
+    padding: 8px 12px;
+}
+
+.my_form textarea:focus {
+    outline: none !important;
+    border-color: #FF0000;
+    box-shadow: 0px 1px 6px #FF00004D;
+}
+
+
+
+/* contact form end */
+
+
+
+.contact-btn-submit {
+    border: 1px solid;
+    border-color: var(--primary-color);
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 11px 52px;
+    text-transform:   uppercase ;
+    font-family: "Nunito Sans", sans-serif;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    box-shadow:  0px 3px 6px #FF00004D;
+    font-weight: 400;
+}
+
+.contact-btn-row{
+    padding-top:20px;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
@@ -483,6 +595,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 
 
 .page-footer-nav p{

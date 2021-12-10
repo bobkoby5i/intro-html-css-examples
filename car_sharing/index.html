@@ -141,8 +141,43 @@
 </section>
 </div>
 
-<section class="section-contact">
-  <p>Lorem ipsum dolor sit amet.</p>
+
+
+<!--
+Name - input[type="text"]
+Email - input[type="email"]
+Message - textarea
+Zgoda - input[type="checkbox"] niestandardowo ostylowany, jednym ze znanych Ci sposobów
+Przycisk wyślij - button[type="submit"]
+Pierwszy input jest zaznaczony na czerwono. Jest to reprezentacja stanu :focus. Domyślnie pole ma szare obramowanie.
+
+-->
+
+<section class="contact-section container">
+  <h2 class="contact-title subTitle">contact</h2>
+  <div class="contact_image_and_form">
+      <img src="./images/Form%20Photo.png">
+      <div class="my_form">
+        <form action="#" >
+<!--          <label for="box_name" class="my_label">Login</label><BR>-->
+          <input id="box_name" type="text" class="contact_form_box" placeholder="Type your name"><BR>
+<!--          <label for="box_password" class="my_label">Password</label><BR>-->
+          <input id="box_password" type="password" class="contact_form_box" placeholder="Type your e-mail">
+<!--          <label for="box_message">Tell us your story:</label><BR>-->
+          <textarea id="box_message" class="contact_form_box" name="message" >Type your message</textarea>
+<!--          <hr>-->
+<!--          <input id="accept_rules" type="checkbox" />-->
+<!--          <label for="accept_rules">Accept rules</label>-->
+          <div class="contact-btn-row">
+            <button class="contact-btn-submit" type="submit">Submit</button>
+          </div>
+        </form>
+
+  </div>
+
+
+
+
 </section>
 
 
