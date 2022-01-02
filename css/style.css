@@ -1,6 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #003b9f;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 header {
@@ -13,11 +27,8 @@ header {
     background-position-x: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 100px;
 }
-
-
-
 
 
 header h1 {
@@ -27,30 +38,60 @@ header h1 {
     text-align: center;
 }
 
-main {
+
+
+.full_stack_section{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    background-color: #003b9f;
-    padding: 80px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
-section {
+.css_section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: gold;
+    font-size: 40px;
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    border-bottom: 2px solid goldenrod;
+    width: 100%;
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.my_article {
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
     width: 320px;
+    padding: 10px;
 }
 
-section h2 {
+
+
+
+.my_article h3 {
     color: white;
     font-size: 27px;
     font-weight: bold;
 }
 
-section p {
+p {
     padding: 20px;
     color: ghostwhite;
     font-size: 17px;

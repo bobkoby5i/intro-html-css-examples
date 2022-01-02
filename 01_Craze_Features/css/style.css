@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    font-family: "open_sanslight", sans-serif;
+}
+
+
+
+.hidden {
+    display: none !important;
+}
+
+:root {
+    --primary-color: #FF0000;
+    --secondary-color: #FFFFFF;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 930px;
+    border: #ff4d00 0px solid;
+
+}
+
+.page-header {
+    position: relative;
+    background-image: url("../images/bg.jpg");
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /*height: 807px;*/
+    /*height: calc( 100vh - 56px /2  );*/
+}
+
+
+
+.banner {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap:100px
+}
+
+.banner-left {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 0px;
+    justify-content: left;
+    flex-direction: column;
+    align-items: normal;
+}
+
+.banner-left img{
+    height: 100px;
+    width: 200px;
+}
+
+.banner-left p{
+    padding-top: 20px;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+
+.banner-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+}
+
+main p {
+    color: #838383;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+.main-sections {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.main-section  {
+    text-align: center;
+    padding: 10px 30px;
+
+}
+
+.main-section p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #838383;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #232323;
+    font-weight: 600;
+}
+
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #232323;
+    font-weight: 600;
+}
+
+.v-line::before
+ {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 2px;
+    background: #0045ff;
+    margin: 0 10px;
+}
