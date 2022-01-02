@@ -1,0 +1,26 @@
+.full_stack_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full_stack_section h2 {
+  color: #eeff00;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eeff00;
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=full_stack_section.css.map */
