@@ -1,13 +1,7 @@
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #042167;
   background-image: url("../images/bg.jpg");
   background-size: 100% 520px;
@@ -16,11 +10,9 @@ header {
   background-repeat: no-repeat;
   height: 100px;
 }
-
 header h1 {
-  color: #eeff00;
+  color: #ff4d00;
   text-transform: uppercase;
   font-size: 60px;
   text-align: cent;
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */
