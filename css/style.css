@@ -2,11 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0px;
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #003b9f;
-}
 
 main {
     padding-bottom: 50px;
@@ -20,23 +15,6 @@ main {
 
 
 
-.css_section{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-
-h2 {
-    color: gold;
-    font-size: 40px;
-    padding-top: 10px ;
-    padding-bottom: 10px ;
-    border-bottom: 2px solid goldenrod;
-    width: 100%;
-    text-align: center;
-}
-
 .articles {
     display: flex;
     justify-content: center;
@@ -49,7 +27,7 @@ h2 {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid rgb(179, 179, 179);
     border-radius: 5px;
     width: 320px;
     padding: 10px;
@@ -64,7 +42,7 @@ h2 {
     font-weight: bold;
 }
 
-p {
+.my_article p {
     padding: 20px;
     color: ghostwhite;
     font-size: 17px;
