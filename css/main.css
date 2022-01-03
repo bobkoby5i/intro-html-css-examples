@@ -91,7 +91,7 @@ body header .header_logo {
 }
 .banner .card ul li strong {
   display: inline-block;
-  margin-left: max(40px);
+  margin-left: 40px;
   margin-top: 10px;
 }
 .banner .motto {
@@ -148,4 +148,5 @@ body header .header_logo {
 
 main {
   min-width: 400px;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,11 +1,10 @@
-.static_pages_section {
+.full_stack_section {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
-
-h2 {
+.full_stack_section h2 {
   color: gold;
   font-size: 40px;
   padding-top: 10px;
@@ -13,4 +12,5 @@ h2 {
   border-bottom: 2px solid gold;
   width: 100%;
   text-align: center;
-}/*# sourceMappingURL=static_pages_section.css.map */
+}
+/*# sourceMappingURL=full_stack_section.css.map */
