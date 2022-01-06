@@ -1,0 +1,83 @@
+@import "variables"; //plik ze zmiennymi
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+main div {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 40px;
+  font-size: 35px;
+  font-family: 'Patrick Hand', cursive;
+  transition: 0.4s transform;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 2px $primary_color, 0 0 14px $primary_color;
+  // transition: background 1s ease;
+
+  @for $i from 1 through 10 {
+    &:nth-of-type(#{$i}) {
+      background: rgba(dodgerblue, 1 - 0.07 * $i);
+    }
+ }  
+
+  &:hover {
+    transform: scale(1.2) rotate(90deg);
+    background: red;
+  }
+}
+
+
+
+@mixin dialogBox($backgroundColor :green, $width : 300px) {
+  background-color: $backgroundColor;
+  width: $width;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 40px auto;
+  position: relative;
+  border-radius: 5px;
+  &::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: darken($backgroundColor, 20%);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border: 1px solid black;
+  }
+}
+
+.dialog {
+  // @include dialogBox(green, 400px);
+  @include dialogBox(rgb(145, 196, 253), 400px);
+}
+
+.dialog__title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.dialog__text {
+  font-size: 14px;
+}

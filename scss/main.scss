@@ -1,9 +1,10 @@
 @use  "./abstracts";
+@import "bootstrap.min";
 
 $colors: (
     primary: abstracts.$primary_color,
-    primary-light: lighten(abstracts.$primary_color, 40%),
-    primary-dark: darken(abstracts.$primary_color, 40%),
+    primary-light: lighten(abstracts.$primary_color, 41%),
+    primary-dark: darken(abstracts.$primary_color, 41%),
     accent: #FFF6BB
 );
   
@@ -180,5 +181,17 @@ main {
 
 
 
-
-
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 200px;
+    li {
+      margin: 0 4px;
+    }
+    a {
+      @extend .btn;
+      @extend .btn-primary;
+      border-radius: 10px;
+    }
+}
