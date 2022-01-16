@@ -10,6 +10,7 @@ body {
   overflow: hidden;
   background-size: cover;
   background: black url(../images/board-bg.jpg) center bottom;
+  background-size: cover;
 }
 .board .zombie {
   width: 200px;
@@ -80,5 +81,4 @@ body {
     left: 100%;
     transform: scale(-1, 1);
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
