@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  height: 100vh;
+  min-height: 800px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background: black url(../images/board-bg.jpg) center bottom;
+}
+.board .zombie {
+  width: 200px;
+  height: 312px;
+  background-image: url("../images/walkingdead.png");
+  -webkit-animation: anim 1s 0s infinite steps(9), walk 10s 0s infinite linear;
+          animation: anim 1s 0s infinite steps(9), walk 10s 0s infinite linear;
+  position: absolute;
+  bottom: 100px;
+  left: 100%;
+}
+.board .zombie:nth-child(2) {
+  -webkit-animation-delay: 0s, 0.5s;
+          animation-delay: 0s, 0.5s;
+  -webkit-animation-duration: 0.5s, 7s;
+          animation-duration: 0.5s, 7s;
+  bottom: 80px;
+}
+.board .zombie:nth-child(3) {
+  -webkit-animation-delay: 1s, 1s;
+          animation-delay: 1s, 1s;
+  -webkit-animation-duration: 1.5s, 12s;
+          animation-duration: 1.5s, 12s;
+  bottom: 120px;
+}
+@-webkit-keyframes anim {
+  100% {
+    background-position-x: -1800px;
+  }
+}
+@keyframes anim {
+  100% {
+    background-position-x: -1800px;
+  }
+}
+@-webkit-keyframes walk {
+  0% {
+    left: 100%;
+    transform: scale(1, 1);
+  }
+  50% {
+    left: -200px;
+    transform: scale(1, 1);
+  }
+  50.00001% {
+    left: -200px;
+    transform: scale(-1, 1);
+  }
+  100% {
+    left: 100%;
+    transform: scale(-1, 1);
+  }
+}
+@keyframes walk {
+  0% {
+    left: 100%;
+    transform: scale(1, 1);
+  }
+  50% {
+    left: -200px;
+    transform: scale(1, 1);
+  }
+  50.00001% {
+    left: -200px;
+    transform: scale(-1, 1);
+  }
+  100% {
+    left: 100%;
+    transform: scale(-1, 1);
+  }
+}
+/*# sourceMappingURL=main.css.map */
