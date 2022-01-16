@@ -1,0 +1,89 @@
+.container {
+  max-width: 1200px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+
+[class^=col-] {
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+@media (min-width: 600px) {
+  .row {
+    display: flex;
+  }
+  .row .col-1 {
+    width: 8.3333333333%;
+  }
+  .row .col-2 {
+    width: 16.6666666667%;
+  }
+  .row .col-3 {
+    width: 25%;
+  }
+  .row .col-4 {
+    width: 33.3333333333%;
+  }
+  .row .col-5 {
+    width: 41.6666666667%;
+  }
+  .row .col-6 {
+    width: 50%;
+  }
+  .row .col-7 {
+    width: 58.3333333333%;
+  }
+  .row .col-8 {
+    width: 66.6666666667%;
+  }
+  .row .col-9 {
+    width: 75%;
+  }
+  .row .col-10 {
+    width: 83.3333333333%;
+  }
+  .row .col-11 {
+    width: 91.6666666667%;
+  }
+  .row .col-12 {
+    width: 100%;
+  }
+}
+
+body {
+  background-color: #9b9b9b;
+}
+
+header {
+  height: 100px;
+  background: darkmagenta;
+}
+
+footer {
+  height: 100px;
+  background: dodgerblue;
+}
+
+.left {
+  height: 60px;
+  margin-bottom: 10px;
+  background: #4cfd01;
+}
+
+main {
+  height: 500px;
+  background: gold;
+}
+
+.right {
+  height: 500px;
+  background: orange;
+}
+/*# sourceMappingURL=main.css.map */
