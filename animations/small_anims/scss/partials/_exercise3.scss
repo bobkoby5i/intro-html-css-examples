@@ -61,10 +61,44 @@
   &-title {
     font-weight: bold;
     font-size: 16px;
+    opacity: 0;
+    transition: 1s;
   }
 
   &-text {
     font-size: 13px;
     color: rgba(#fff, 0.8);
+    opacity: 0;
+    transition: 1s;
   }
 }
+
+
+
+
+
+.project-link:hover {
+  .project-img{
+    transform: rotate(10deg); 
+  }
+
+
+
+  .project-overflow {
+    // background: none;
+    .project-title{
+      font-size: 24px;
+      text-transform: uppercase;
+      color:gold;
+      opacity: 1;
+
+    }
+    .project-text{
+      color: white;
+      opacity: 1;
+    }
+
+  }
+
+}
+  

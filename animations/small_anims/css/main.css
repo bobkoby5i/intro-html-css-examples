@@ -336,9 +336,26 @@
 .project-title {
   font-weight: bold;
   font-size: 16px;
+  opacity: 0;
+  transition: 1s;
 }
 .project-text {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: 1s;
 }
-/*# sourceMappingURL=main.css.map */
+
+.project-link:hover .project-img {
+  transform: rotate(10deg);
+}
+.project-link:hover .project-overflow .project-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: gold;
+  opacity: 1;
+}
+.project-link:hover .project-overflow .project-text {
+  color: white;
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */

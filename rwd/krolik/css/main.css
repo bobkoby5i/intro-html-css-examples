@@ -1,0 +1,42 @@
+.images-g {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.images-g .img {
+  width: 100%;
+  height: auto;
+}
+.images-g .div {
+  background-image: url("../images/rabbit.png");
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .images-g {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.images-f-r {
+  display: flex;
+}
+.images-f-r .img {
+  width: 50%;
+}
+.images-f-r .div {
+  width: 50%;
+  background-image: url("../images/rabbit.png");
+  background-size: cover;
+}
+@media (max-width: 760px) {
+  .images-f-r {
+    flex-direction: column;
+  }
+  .images-f-r .img {
+    width: 100%;
+  }
+  .images-f-r .div {
+    width: 100%;
+    aspect-ratio: 1024/576;
+  }
+}/*# sourceMappingURL=main.css.map */

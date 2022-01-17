@@ -1,4 +1,25 @@
-html, body {
-	overflow: hidden;
-	background: black;
+html {
+  overflow: hidden;
+  background: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: radial-gradient(top, circle cover, #490426 20%, black 80%);
+  cursor: move;
 }
+
+body,
+.space {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#space {
+  left: 0;
+  top: 0;
+  zoom: 1;
+}
+
+#space span {
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */
