@@ -1,0 +1,101 @@
+.exercise1 {
+  display: flex;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  flex-grow: 1;
+}
+
+.test1 {
+  background: #FF6347;
+}
+
+.test2 {
+  background: #9370DB;
+}
+
+.test3 {
+  background: #00FA9A;
+}
+
+
+.loading2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 6px solid rgba(#fff,0.3);
+  border-right-color: #fff;
+  animation: loading2 0.7s 0s infinite linear;
+}
+
+@keyframes loading2 {
+  100%{
+      transform: rotate(1turn);
+  }
+}
+
+.loading1 {
+  width: 20px;
+  height: 40px;
+  border-radius: 20px;    
+  border: 1px solid rgba(#fff,0.3);
+
+  &::after {
+      content: "";
+      width:  15px;
+      height: 15px;
+      background: #fff;
+      display: block;
+      margin: 3px auto;
+      border-radius: 50%;
+      // &:hover{
+          animation: loading1-anim 1s 0s infinite alternate ease-in-out;
+      //  }    
+  
+  }
+}
+
+@keyframes loading1-anim {
+  0%{
+      margin-top: 3px
+  }
+  50%{
+      height: 20px;
+  }
+  100%{
+      margin-top: 22px    
+  }
+}
+
+.loading3{
+  display: flex;
+  width: 80px;
+  height: 50px;
+  span {
+      background-color: #fff;
+      border-radius: 5px;
+      margin: 1px;
+      flex: 1;
+      animation: loading3-anim 1s 0s infinite alternate both;
+      transform-origin: center bottom;
+      @for $i from 1 through 15 {
+          &:nth-child(#{$i}) {
+              animation-delay: 0.2s * $i;
+          }
+      }
+  }
+}
+
+@keyframes loading3-anim {
+  0% {
+      transform: scale(1,0);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+  
+}

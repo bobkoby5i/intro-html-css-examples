@@ -1,0 +1,119 @@
+.exercise2 {
+  display: flex;
+  padding: 100px;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-button {
+  padding: 20px 40px;
+  color: crimson;
+  border-radius: 40px;
+  border: 0;
+  margin: 10px;
+  text-transform: uppercase;
+  background: none;
+  box-shadow: inset 0 0 0 3px crimson;
+  cursor: pointer;
+}
+
+.red-button:hover {
+  color:white;
+  box-shadow: inset 0 0 0 30px crimson, 0 0 0 5px rgba(crimson, 0.4);
+
+}
+
+
+.blue-button {
+  padding: 20px 40px;
+  background: dodgerblue;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  margin: 10px;
+  text-transform: uppercase;
+  position:relative;
+  overflow: hidden;
+  cursor: pointer;
+  &::before, &::after{
+    content: "";
+    position:absolute;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+  &::before {
+    background: red;
+    transform: translate(-50%, -50%)  scale(0);
+    top:0;
+    left:0;
+  }  
+
+  &::after{
+    background: gold;
+    transform: translate(50%, 50%) scale(0);
+    right:0;
+    bottom:0;
+  }
+
+  span{
+    z-index: 1;
+    position: relative;
+  }
+
+
+
+}
+
+.blue-button:hover {
+  &::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  &::after {
+    transform: translate(50%, 50%) scale(1);
+  }
+
+}
+
+
+.green-button {
+  padding: 20px 40px;
+  background: #2FEB73;
+  border: 0;
+  color: #fff;
+  margin: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  span{
+    position: relative;
+    z-index: 1;
+  }
+  svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 150px;
+    stroke: green;
+    stroke-width: 45px;
+    stroke-dasharray: 7000px;
+    stroke-dashoffset: 7000px;
+    transition: 3s;
+  }
+
+}
+
+.green-button:hover {
+  svg {
+    stroke-dashoffset: 0px;
+  }
+  
+}
+
+
