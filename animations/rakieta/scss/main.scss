@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fire {
+  50% {
+    transform: translate(-50%, 0) scale(0.9, 1);
+  }
+  100% {
+    transform: translate(-50%, 0) scale(1, 0.9);
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(18, 43, 71);
+  background: url(../images/stars.png),
+  linear-gradient(180deg, rgba(18, 43, 71, 1) 0%, rgba(18, 20, 37, 1) 51%, rgba(46, 25, 54, 1) 100%);
+  position: relative;
+  background-size: 200px 200px, cover;
+  min-width: 1200px;
+  min-height: 800px;
+}
+
+.rocket {
+  width: 89px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  span {
+    display: block;
+    background: url(../images/rocket.png);
+    width: 89px;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &.fly {
+    &::after {
+      content: '';
+      background: url(../images/fire.png);
+      background-size: cover;
+      width: 42px;
+      height: 67px;
+      position: absolute;
+      left: 50%;
+      top: 87%;
+      transform: translate(-50%, 0);
+      animation: fire 0.1s 0s infinite alternate;
+      transform-origin: 50% 0;
+      z-index: 0;
+    }
+    animation: rakieta_lot0 2s 0s 1 linear forwards,
+               rakieta_rot1 1s 2s 1 linear forwards,
+               rakieta_lot1 4s 3s 1 linear forwards,
+               rakieta_rot2 1s 7s 1 linear forwards,
+               rakieta_lot2 2s 8s 1 linear forwards,
+               rakieta_rot3 1s 10s 1 linear forwards,
+               rakieta_lot3 4s 11s 1 linear forwards,
+               rakieta_rot4 1s 15s 1 linear forwards,
+               rakieta_lot4 2s 16s 1 linear forwards,
+               ;  
+               
+    @keyframes rakieta_lot0 {
+      to {
+        left: 150px;
+        top: 100px;
+      }      
+    }                 
+    @keyframes rakieta_rot1 {
+      to {
+        transform: rotate(90deg);
+      }      
+    }    
+    @keyframes rakieta_lot1 {
+      to {
+        left: calc(100% - 350px);
+        top: 150px;
+      }      
+    }    
+    @keyframes rakieta_rot2 {
+      to {
+        transform: rotate(180deg);
+      }      
+    }    
+    @keyframes rakieta_lot2 {
+      to {
+        left: calc(100% - 460px);
+        top: calc(100% - 350px);
+      }      
+    }    
+    @keyframes rakieta_rot3 {
+      to {
+        transform: rotate(270deg);
+      }      
+    }    
+    @keyframes rakieta_lot3 {
+      to {
+        left: 200px;
+        top: calc(100% - 300px);
+      }      
+    }       
+    @keyframes rakieta_rot4 {
+      to {
+        transform: rotate(360deg);
+      }      
+    }    
+    @keyframes rakieta_lot4 {
+      to {
+        left: 150px;
+        top: 100px;
+      }      
+    }             
+  }
+}
+
+.planet1 {
+  position: absolute;
+  background: url(../images/planet1.png);
+  width: 228px;
+  height: 229px;
+  left: 150px;
+  top: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(176, 22, 4, 0.4), 0 0 100px rgba(249, 149, 34, 0.2);
+}
+
+.planet2 {
+  position: absolute;
+  background: url(../images/planet2.png);
+  width: 201px;
+  height: 201px;
+  left: calc(100% - 350px);
+  top: 150px;
+}
+
+.planet3 {
+  position: absolute;
+  background: url(../images/planet3.png);
+  width: 257px;
+  height: 246px;
+  left: calc(100% - 460px);
+  top: calc(100% - 350px);
+
+}
+
+.planet4 {
+  position: absolute;
+  background: url(../images/planet4.png);
+  width: 225px;
+  height: 225px;
+  left: 200px;
+  top: calc(100% - 300px);
+  border-radius: 50%;
+  box-shadow: 0 0 50px rgba(247, 215, 76, 0.2);
+}
