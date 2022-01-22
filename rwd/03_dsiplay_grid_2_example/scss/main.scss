@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+    // background-color: #242933;
+    background-color: #242933;
+  }
+
+.container{
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}  
+  
+  .sidebar {
+      grid-area: sidebar;
+    }
+  
+    .content {
+      grid-area: content;
+    }
+  
+    .header {
+      grid-area: header;
+    }
+  
+    .footer {
+      grid-area: footer;
+    }
+  
+  
+    .wrapper {
+      margin-top: 20px;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 120px 120px 120px;
+      grid-template-areas:
+      "....... header header"
+      "sidebar content content"
+      "footer  footer  footer";
+      // background-color: #fff;
+      color: #444;
+    }
+  
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+  }
+  
+  .header,
+  .footer {
+    background-color: #999;
+  }
+
+
+  ///////////////////////////////////
+
+
+  ///////////////////////////////////////
+
+  .fruit-container {
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas:
+    "avocado avocado avocado"
+    "banana kiwi mango"
+    "banana apple mango"
+    "oranges  oranges  oranges";
+    // background-color: #fff;
+    color: #444;
+  }
+
+
+    // background-color: #242933;
+    // grid-template-columns: 
+    //  [left] 1fr
+    //  [middle1] 1fr
+    //  [middle2] 1fr 
+    //  [right] 3fr;   
+
+
+  .fruit-box {
+    text-align: center;
+    background-color: #444;
+    border: solid 1 black;
+    color: black;
+    font-family: Rubik, sans-serif;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 150%;
+    font-weight: 700;
+  }
+
+  .avocado{
+    grid-area: avocado;
+    background-color: green;
+  }
+
+  .apple{
+    grid-area: apple;
+    background-color: crimson;
+  }
+  .kiwi{
+    grid-area: kiwi;
+    background-color: greenyellow;
+  }
+  .mango{
+    grid-area: mango;
+    background-color: gold;
+  }
+  .oranges{
+    grid-area: oranges;
+    background-color: orange;
+  }
+  .banana{
+    grid-area: banana;
+    background-color: yellow;
+  }
+
+
+  
