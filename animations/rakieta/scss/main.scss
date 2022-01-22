@@ -110,6 +110,10 @@
       }      
     }    
     @keyframes rakieta_lot3 {
+      from {
+        left: calc(100% - 460px);
+        top: calc(100% - 350px);
+      }        
       to {
         left: 200px;
         top: calc(100% - 300px);
@@ -121,6 +125,10 @@
       }      
     }    
     @keyframes rakieta_lot4 {
+      from {
+        left: 200px;
+        top: calc(100% - 300px);
+      }         
       to {
         left: 150px;
         top: 100px;
