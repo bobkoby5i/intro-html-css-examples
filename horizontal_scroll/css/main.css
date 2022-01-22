@@ -1,0 +1,14 @@
+.flex-container {
+  margin: 10px auto;
+  display: flex;
+  background-color: black;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.zdjecie {
+  margin: 20px;
+  border: 2px solid white;
+}/*# sourceMappingURL=main.css.map */
