@@ -11,6 +11,7 @@ $gap: 5px;
 }
 
 [class^="col-"] {
+  min-height: 1px;
   padding: 0 $gap;
   box-sizing: border-box;
   margin-bottom: $gap * 2;    

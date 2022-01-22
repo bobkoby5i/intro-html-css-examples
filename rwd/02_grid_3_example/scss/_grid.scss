@@ -1,0 +1,39 @@
+@use "sass:math";
+* {
+  box-sizing : border-box;
+}
+
+$columns: 12;
+$gap: 5px;
+$bp: 600px;
+$column-base-width: 100% / $columns;
+
+.container {
+  max-width: 1200px;
+  padding-left: $gap;
+  padding-right: $gap;
+  margin: 0 auto;
+}
+
+[class^="col-"] {
+  padding: 0 $gap;
+  box-sizing: border-box;
+  margin-bottom: $gap * 2;
+  min-height: 1px;
+  // width: $column-base-width;
+}
+
+.row {
+  margin-left: -$gap;
+  margin-right: -$gap;
+
+  @media (min-width: $bp) {
+    display: flex;
+
+    @for $i from 1 through $columns {
+      .col-#{ $i } {
+        width: $column-base-width * $i;
+      }
+    }
+  }
+}
