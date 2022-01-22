@@ -1,0 +1,29 @@
+@use "grid";
+
+header {
+  height: 100px;
+  background-color: blueviolet;
+}
+
+
+.left {
+  background-color: greenyellow;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.right {
+  background-color: gold;
+  height: 500px;
+}
+
+.center {
+  background-color: orange;
+  height: 500px;
+}
+
+
+footer {
+  height: 100px;
+  background-color: violet;
+}
